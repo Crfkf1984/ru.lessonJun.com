@@ -16,9 +16,8 @@ public class MainApp {
         SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
         Session session = sessionFactory.openSession();
         TableCourses table = session.get(TableCourses.class, 1);
-        System.out.println(table);
-        //List<TableCourses> list = session.createQuery("FROM TableCourses").list();
-        //list.stream().forEach(System.out::println);
+        System.out.println(table.getName() + '\t' + table.getStudentsCount());
+
         session.close();
         sessionFactory.close();
     }

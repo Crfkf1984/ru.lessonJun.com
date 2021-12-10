@@ -25,4 +25,40 @@ public class TableCourses {
     private Integer price;
     @Column(name = "price_per_hour")
     private Double pricePerHour;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getDuration() {
+        return duration;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public Integer getTeacherId() {
+        return teacherId;
+    }
+
+    public Integer getStudentsCount() {
+        return studentsCount;
+    }
+
+    public Integer getPrice() {
+        return price;
+    }
+
+    public Double getPricePerHour() {
+        return pricePerHour;
+    }
 }
