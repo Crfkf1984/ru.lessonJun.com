@@ -18,8 +18,8 @@ public class MainApp {
         Session session = sessionFactory.openSession();
 
 
-       List<Students> course = session.createQuery("FROM Students").getResultList();
-       course.forEach(System.out::println);
+       List<Teacher> course = session.createQuery("FROM Teacher").getResultList();
+       course.get(1).getList().forEach(System.out::println);
 
         session.close();
         sessionFactory.close();
