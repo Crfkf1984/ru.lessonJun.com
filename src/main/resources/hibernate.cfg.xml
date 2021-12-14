@@ -19,6 +19,9 @@
         <property name="hbm2ddl.auto">validate</property>
 
     <mapping class="Hibernete2.TableCourses"/>
+        <mapping class="Hibernate3.TableCourse"/>
+        <mapping class="Hibernate3.Teacher"/>
+        <mapping class="Hibernate3.Students"/>
 
 </session-factory>
 </hibernate-configuration>
